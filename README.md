@@ -9,7 +9,7 @@ Main focused on using gguf models and gpu(cuda) at moment.
 1. Install llama.cpp (python) 
    - [Cannot go inside every error that raises when installing that, I manage to get mine working, every system has their own errors probably.]
 >
-2. Download the DeepEval repository files, only the main carpet and put it into a empty carpet.
+2. Download the DeepEval repository files, only the main carpet and put it into an empty carpet.
 >
 3. pip install -U deepeval
 >
