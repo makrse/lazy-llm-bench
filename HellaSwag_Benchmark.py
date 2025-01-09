@@ -121,7 +121,7 @@ if __name__ == "__main__":
     )
     model = gguf_loader.load()
 
-    benchmark = HellaSwag( # check their task list, some are useful, some are not, like Health tast only has 4 entries, gives good score making not that "good" for overal score if rigid
+    benchmark = HellaSwag( # check their task list, some are useful, some are not, like Health task only has 4 entries, gives good score making not that "good" for overal score if rigid
         tasks=[HellaSwagTask.COMPUTERS_AND_ELECTRONICS, HellaSwagTask.INSTALLING_CARPET, HellaSwagTask.EDUCATION_AND_COMMUNICATIONS,
                HellaSwagTask.WORK_WORLD, HellaSwagTask.FINANCE_AND_BUSINESS, 
                ],
