@@ -11,7 +11,7 @@ Main focused on using gguf models and gpu(cuda) at moment.
 >
 2. Download the DeepEval repository files, only the main carpet and put it into an empty carpet.
 >
-3. pip install -U deepeval
+3. pip install -U deepeval==2.1.2
 >
 4. Use my repo and put it on the main carpet, replace the files from mine to theirs.
 >
