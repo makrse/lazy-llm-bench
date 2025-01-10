@@ -6,6 +6,7 @@ Main focused on using gguf models and gpu(cuda) at moment.
 
 # How to use it:
 
+0. Make an envirioment using anaconda[conda] or python venv, with python version 3.10(ideal) or 3.10.8(current im using) (I didnt test other version of py)
 1. Install llama.cpp (python) 
    - [Cannot go inside every error that raises when installing that, I manage to get mine working, every system has their own errors probably.]
 >
