@@ -6,19 +6,21 @@ Main focused on using gguf models and gpu(cuda) at moment.
 
 # How to use it:
 
-0. Make an envirioment using anaconda[conda] or python venv, with python version 3.10(ideal) or 3.10.8(current im using) (I didnt test other version of py)
-1. Install llama.cpp (python) 
+1. Make an envirioment using anaconda[conda] or python venv, and choose:
+   - python version 3.10(ideal)
+   - python version 3.10.8(current im using) (I didnt test other version of py)
+2. Install llama.cpp (python) 
    - [Cannot go inside every error that raises when installing that, I manage to get mine working, every system has their own errors probably.]
 >
-2. Download the DeepEval repository files, only the main carpet and put it into an empty carpet.
+3. Download the DeepEval repository files, only the main carpet and put it into an empty carpet.
 >
-3. pip install -U deepeval==2.1.2
+4. pip install -U deepeval==2.1.2
 >
-4. Use my repo and put it on the main carpet, replace the files from mine to theirs.
+5. Use my repo and put it on the main carpet, replace the files from mine to theirs.
 >
-5. Open the [bench type].py you want to run and I suggest to put the gguf model into the main carpet, modify the parameters if you want to fit your use case.
+6. Open the [bench type].py you want to run and I suggest to put the gguf model into the main carpet, modify the parameters if you want to fit your use case.
 >
-6. Run it.
+7. Run it.
     - py bench_type.py
 
 
