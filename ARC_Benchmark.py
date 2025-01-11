@@ -7,7 +7,6 @@ from deepeval.benchmarks.modes import ARCMode
 if __name__ == "__main__":
     model_path = os.path.join("name_of_model.gguf")
     
-    # Load the GGUF model
     gguf_loader = GGUFModelLoader(
         model_path=model_path, 
         context_length=0, # Actual token lengh of the model you want to asign so the model memorize, mostly they tell you how much tokens, it could consume ram
@@ -23,16 +22,12 @@ if __name__ == "__main__":
     )
     model = gguf_loader.load()
 
-    # Initialize ARC Benchmark
     arc_benchmark = ARC(
         n_shots=0, # being 0 called zero shots, they said default being 10, no more than 15.
         n_problems=100,
         mode=ARCMode.CHALLENGE, # EASY - CHALLENGE
         verbose_mode=True # log stuffs on console.
     )
-
-    # Evaluate the model on ARC
     results = arc_benchmark.evaluate(model)
     print(f"ARC Benchmark Results: {results}")
-
     model.close_model()

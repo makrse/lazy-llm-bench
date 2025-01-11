@@ -30,5 +30,4 @@ if __name__ == "__main__":
 
     benchmark.evaluate(model)
     print(f"MMLU Benchmark Results: {benchmark.overall_score}")
-
     model.close_model()

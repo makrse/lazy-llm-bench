@@ -25,14 +25,12 @@ if __name__ == "__main__":
 
     benchmark = HellaSwag( # check their task list, some are useful, some are not, like Health task only has 4 entries, gives good score making not that "good" for overal score if rigid
         tasks=[HellaSwagTask.COMPUTERS_AND_ELECTRONICS, HellaSwagTask.INSTALLING_CARPET, HellaSwagTask.EDUCATION_AND_COMMUNICATIONS,
-               HellaSwagTask.WORK_WORLD, HellaSwagTask.FINANCE_AND_BUSINESS, 
-               ],
+                HellaSwagTask.WORK_WORLD, HellaSwagTask.FINANCE_AND_BUSINESS, 
+            ],
         n_shots=0, # being 0 called zero shots, they said default being 10, no more than 15.
         verbose_mode=True # log stuffs on console.
     )
 
-    # Evaluate the model on ARC
     benchmark.evaluate(model)
     print(f"HellaSwag Benchmark Results: {benchmark.overall_score}")
-
     model.close_model()
