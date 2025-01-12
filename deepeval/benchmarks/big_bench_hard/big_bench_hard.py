@@ -199,14 +199,10 @@ class BigBenchHard(DeepEvalBaseBenchmark):
         try:
             res = model.generate(prompt=prompt, schema=pydantic_model)
             #prediction = str(res.answer)
-
-            if res is None:
-                prediction = ""  # Fallback if res is None
-            elif isinstance(res, str):
-                prediction = res  # Directly assign if the response is a string
+            if isinstance(res, dict):
+                prediction = str(res.get("answer", ""))
             else:
-                prediction = str(res.answer)  # Access the answer attribute if it's an object
-
+                prediction = str(res)
 
         except TypeError:
             prompt += self.confinement_instructions_dict[task]
