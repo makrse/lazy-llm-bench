@@ -1,0 +1,1 @@
+Heres go those embeddings that disk space its acceptable for common use | #reminder

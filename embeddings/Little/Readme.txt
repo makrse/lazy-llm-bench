@@ -1,0 +1,1 @@
+Heres go those embeddings that does not ocupe any disk space | #reminder

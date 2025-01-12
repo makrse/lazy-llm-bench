@@ -1,0 +1,1 @@
+Heres go those embeddings that disk space its heave | #reminder
